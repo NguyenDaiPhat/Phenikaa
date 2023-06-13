@@ -1,0 +1,5 @@
+<map id="wowf.models.lookup_tables.ChallengeType" name="wowf.models.lookup_tables.ChallengeType">
+<area shape="rect" id="node2" href="$classwowf_1_1models_1_1lookup__tables_1_1_lookup.html" title="{wowf.models.lookup\l_tables.Lookup\n|+ name\l+ lookup_data\l+ id\l+ name\l|+ __init__()\l+ __unicode__()\l+ create()\l+ populate()\l+ get_by_name()\l}" alt="" coords="5,245,147,469"/>
+<area shape="rect" id="node4" href="$classwowf_1_1models_1_1meta_1_1_base.html" title="{wowf.models.meta.Base\n|+ query\l|+ __str__()\l+ __repr__()\l+ __unicode__()\l+ get_by_id()\l+ create()\l+ delete()\l}" alt="" coords="171,271,336,443"/>
+<area shape="rect" id="node6" href="$classwowf_1_1lib_1_1fulltext_1_1_fulltext_base.html" title="Adds support for fulltext searching to SQLAlchemy&#39;s Base object." alt="" coords="159,5,348,195"/>
+</map>

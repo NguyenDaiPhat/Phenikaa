@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% set title = user.username %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    {{ util.user_card(user, add_remove_buddy_form) }}
+    <div class="stream-wrapper">
+        <ul class="tabs">
+            <li>
+                <a href="{{ request.route_url('user.view.challenges', id=user.id) }}" {{ util.mark_selected_route('user.view.challenges') }}>
+                   Challenges
+                </a>
+            </li>
+            <li>
+                <a href="{{ request.route_url('user.view.buddies', id=user.id) }}" {{ util.mark_selected_route('user.view.buddies') }}>
+                    Buddies
+                </a>
+            </li>
+        </ul>
+        {% block stream %}{% endblock %}
+    </div>
+{% endblock %}

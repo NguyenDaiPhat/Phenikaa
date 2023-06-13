@@ -1,0 +1,7 @@
+<map id="wowf.scripts.BaseCommand" name="wowf.scripts.BaseCommand">
+<area shape="rect" id="node3" href="$classwowf_1_1scripts_1_1adduser_1_1_add_user_command.html" title="{wowf.scripts.adduser.Add\lUserCommand\n||+ run()\l}" alt="" coords="5,235,179,338"/>
+<area shape="rect" id="node5" href="$classwowf_1_1scripts_1_1cleanup_1_1_cleanup_command.html" title="{wowf.scripts.cleanup.Cleanup\lCommand\n||+ run()\l+ delete_expired_tokens()\l}" alt="" coords="203,227,400,347"/>
+<area shape="rect" id="node7" href="$classwowf_1_1scripts_1_1indexer_1_1_update_indexes_command.html" title="{wowf.scripts.indexer.Update\lIndexesCommand\n||+ run()\l}" alt="" coords="424,235,611,338"/>
+<area shape="rect" id="node9" href="$classwowf_1_1scripts_1_1initializedb_1_1_initialize_d_b_command.html" title="{wowf.scripts.initializedb.\lInitializeDBCommand\n||+ run()\l}" alt="" coords="635,235,800,338"/>
+<area shape="rect" id="node11" href="$classwowf_1_1scripts_1_1sendinvite_1_1_send_invite_command.html" title="{wowf.scripts.sendinvite.\lSendInviteCommand\n||+ run()\l}" alt="" coords="824,235,987,338"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="wowf.forms.user.UpdateProfileForm" name="wowf.forms.user.UpdateProfileForm">
+<area shape="rect" id="node2" href="$classwowf_1_1forms_1_1user_1_1_user_form.html" title="{wowf.forms.user.UserForm\n|+ username\l+ email\l+ gender\l+ dob\l+ weight\l+ height\l|+ validate_dob()\l}" alt="" coords="31,139,212,311"/>
+<area shape="rect" id="node4" href="$classwowf_1_1forms_1_1_form.html" title="Updated form object, which accepts a state variable to assist in more complex validation." alt="" coords="60,5,183,91"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classwowf_1_1lib_1_1utils_1_1_storage.html" title="Generic container class." alt="" coords="5,32,152,61"/>
+<area shape="rect" id="node3" href="$classwowf_1_1config_1_1_settings.html" title="Storage container for settings, which attempts to guess the type, e.g., number, boolean, etc." alt="" coords="200,5,344,35"/>
+<area shape="rect" id="node5" href="$classwowf_1_1forms_1_1_state.html" title="Storage object to pass state to forms for more complex validation." alt="" coords="209,59,335,88"/>
+</map>

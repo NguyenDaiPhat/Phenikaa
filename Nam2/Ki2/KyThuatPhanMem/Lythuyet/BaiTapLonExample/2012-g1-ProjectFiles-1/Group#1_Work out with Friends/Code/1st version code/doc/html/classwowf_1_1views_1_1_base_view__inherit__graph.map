@@ -1,0 +1,20 @@
+<map id="wowf.views.BaseView" name="wowf.views.BaseView">
+<area shape="rect" id="node3" href="$classwowf_1_1views_1_1account_1_1_change_password_view.html" title="{wowf.views.account.Change\lPasswordView\n||+ main()\l}" alt="" coords="5,174,195,277"/>
+<area shape="rect" id="node5" href="$classwowf_1_1views_1_1account_1_1_request_password_view.html" title="{wowf.views.account.Request\lPasswordView\n||+ main()\l}" alt="" coords="219,174,413,277"/>
+<area shape="rect" id="node7" href="$classwowf_1_1views_1_1account_1_1_reset_password_view.html" title="{wowf.views.account.Reset\lPasswordView\n||+ main()\l}" alt="" coords="437,174,616,277"/>
+<area shape="rect" id="node9" href="$classwowf_1_1views_1_1account_1_1_update_profile_view.html" title="{wowf.views.account.Update\lProfileView\n||+ main()\l}" alt="" coords="640,174,827,277"/>
+<area shape="rect" id="node11" href="$classwowf_1_1views_1_1challenge_1_1_challenge_view.html" title="{wowf.views.challenge.ChallengeView\n||+ main()\l}" alt="" coords="851,183,1091,268"/>
+<area shape="rect" id="node13" href="$classwowf_1_1views_1_1challenge_1_1_create_challenge_view.html" title="{wowf.views.challenge.Create\lChallengeView\n||+ main()\l}" alt="" coords="1115,174,1307,277"/>
+<area shape="rect" id="node15" href="$classwowf_1_1views_1_1error_1_1_catch_all_view.html" title="{wowf.views.error.CatchAllView\n||+ main()\l}" alt="" coords="1331,183,1533,268"/>
+<area shape="rect" id="node17" href="$classwowf_1_1views_1_1error_1_1_forbidden_view.html" title="{wowf.views.error.ForbiddenView\n||+ main()\l}" alt="" coords="1557,183,1768,268"/>
+<area shape="rect" id="node19" href="$classwowf_1_1views_1_1error_1_1_not_found_view.html" title="{wowf.views.error.NotFoundView\n||+ main()\l}" alt="" coords="1792,183,2003,268"/>
+<area shape="rect" id="node21" href="$classwowf_1_1views_1_1home_1_1_dashboard_view.html" title="{wowf.views.home.DashboardView\n||+ main()\l}" alt="" coords="2027,183,2248,268"/>
+<area shape="rect" id="node23" href="$classwowf_1_1views_1_1home_1_1_home_view.html" title="{wowf.views.home.HomeView\n||+ main()\l}" alt="" coords="2272,183,2467,268"/>
+<area shape="rect" id="node25" href="$classwowf_1_1views_1_1search_1_1_search_view.html" title="{wowf.views.search.SearchView\n||+ main()\l+ ajax()\l}" alt="" coords="2491,174,2699,277"/>
+<area shape="rect" id="node27" href="$classwowf_1_1views_1_1user_1_1_login_view.html" title="{wowf.views.user.LoginView\n||+ main()\l}" alt="" coords="2723,183,2907,268"/>
+<area shape="rect" id="node29" href="$classwowf_1_1views_1_1user_1_1_logout_view.html" title="{wowf.views.user.LogoutView\n||+ main()\l}" alt="" coords="2931,183,3123,268"/>
+<area shape="rect" id="node31" href="$classwowf_1_1views_1_1user_1_1_notification_view.html" title="{wowf.views.user.NotificationView\n||+ main()\l}" alt="" coords="3147,183,3365,268"/>
+<area shape="rect" id="node33" href="$classwowf_1_1views_1_1user_1_1_profile_view.html" title="{wowf.views.user.ProfileView\n||+ main()\l}" alt="" coords="3389,183,3579,268"/>
+<area shape="rect" id="node35" href="$classwowf_1_1views_1_1user_1_1_register_view.html" title="{wowf.views.user.RegisterView\n||+ main()\l}" alt="" coords="3603,183,3805,268"/>
+<area shape="rect" id="node37" href="$classwowf_1_1views_1_1user_1_1_send_invite_view.html" title="{wowf.views.user.SendInviteView\n||+ main()\l}" alt="" coords="3829,183,4043,268"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="wowf.models.challenge.WeightChallenge" name="wowf.models.challenge.WeightChallenge">
+<area shape="rect" id="node5" href="$classwowf_1_1models_1_1challenge_1_1_bench_press_challenge.html" title="{wowf.models.challenge.Bench\lPressChallenge\n|&#45; __tablename__\l&#45; __mapper_args__\l|+ description()\l+ __unicode__()\l}" alt="" coords="5,326,203,463"/>
+<area shape="rect" id="node7" href="$classwowf_1_1models_1_1challenge_1_1_squat_challenge.html" title="{wowf.models.challenge.Squat\lChallenge\n|&#45; __tablename__\l&#45; __mapper_args__\l|+ description()\l+ __unicode__()\l}" alt="" coords="227,326,421,463"/>
+<area shape="rect" id="node2" href="$classwowf_1_1models_1_1challenge_1_1___challenge.html" title="Used for SQLAlchemys joined table inheritance (polymorphism)." alt="" coords="132,6,295,109"/>
+</map>

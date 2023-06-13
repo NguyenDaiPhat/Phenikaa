@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% set title = 'Send an Invite' %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    {{ util.send_invite_form(form) }}
+{% endblock %}

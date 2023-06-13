@@ -1,0 +1,116 @@
+Workout With Friends -- Stay fit with a little motivation.
+
+Workout with friends is a web application built to help motivate people to exercise
+by adding competition to their workouts. Site members can create exercise challenges
+and compete against other site members, similar to Words With Friends.
+
+--------------------------------------------------------------------------------
+
+Functional Requirements
+
+*   Users must register to use the service. They must provide their username,
+    email address, password, gender, date of birth, weight (lbs), and height (inches)
+    to register. While it's not the best user experience to ask for so much info
+    up front, many features of the site require this info, so we just require it
+    all up front.
+*   After registration, users can add their timezone and upload a profile picture.
+*   Users must login using email and password.
+*   Users can add each other as workout buddies. Workout buddies are users who
+    frequently compete against each other. These relationships need not be
+    requested/confirmed, and need not be two-way (similar to Twitter followers).
+*   Users must be logged in to create a challenge. There are 4 different types of
+    challenges -- speed, endurance, bench press, and squat.
+*   When creating a speed challenge, the user must specify a distance. Competitors
+    must run as fast as possible for the entire distance while wearing a heart-rate
+    device. Data from the heart-rate device will be used to decide on a winner.
+    Whichever competitor runs the full distance in the shortest amount of time
+    will win the challenge. If any user does not run the full distance, they are
+    disqualified.
+*   When creating an endurance challenge, the user must specify a time limit.
+    Competitors must run as hard as possible for the entire time limit while
+    wearing a heart-rate device. Data from the heart-rate device will be used to
+    decide on a winner. Whichever competitor has the highest average heart rate
+    during the workout will win the challenge. If any user does not run for the
+    full time limit, they are disqualified. However, we are not limiting competitors
+    to this time limit, so we are calculating the average heart rate using a sliding
+    window (the length of the time limit) and taking the maximum average. For
+    instance, if a competitor runs for 45 minutes in a 30 minute challenge, the
+    average heart rate for the best consecutive 30 minute period will be used.
+*   When creating a bench press (or squat) challenge, the user must specify a percentage.
+    Competitors must lift a weight which is this percentage of their body weight
+    for as many reps as they can safely handle. For instance, entering 100% would
+    require both competitors to lift 100% of their body weight for as many reps
+    as possible. There is no way to know for sure whether the user actually lifted
+    this weight, so this is a trust feature. We use Wilks Formula to determine
+    the winner of the challenge.
+*   After creating a challenge, the creator must choose a competitor. A challenge
+    request will be sent to the competitor, who must then either accept or deny
+    the challenge. If the competitor denies the challenge, the creator then has
+    the option to select a new competitor. If the competitor accepts the challenge,
+    both users then perform the specified workout at their own discretion. After
+    performing the workout, the user enters/uploads the results of their workout.
+*   For every workout a user performs, they will receive points. Points are assigned
+    using the criteria specified above. Because bench and squat challenges are
+    trust based, we do not assign as many points for those as we do for the other
+    types.
+*   Statistics on a user will be kept up to date. For instance, we will keep track
+    of a users average speed in a speed challenge, their average heart-rate
+    in an endurance challenge, and their average Wilks Coefficient in a bench/squat
+    challenge.
+*   It is possible for a user to win a competition (receive more points) even during
+    times when they do not necessarily outperform their competitor. After assigning
+    a base score (based solely on performance), a users history comes into play and
+    can either contribute to or detract from their base score. A user who surpasses
+    their average by at least 10% will receive a 10% increase in score. A user
+    who falls short of their average by at least 10% will receive a 10% decrease
+    in score. For instance, let's say a user just runs 10mph in a speed challenge
+    and scores 100 points. Let's say this users average speed is 5mph. Their final
+    score will be 110 points (an additional 10% increase). This feature rewards
+    self improvement and exceptional results.
+*   Users should be able to graph their improvements over time. All information
+    entered after a workout has the ability to be graphed. A user can then view
+    different types of graphs based on different time criteria. For instance, a
+    user can see their average speed per day, per week, or per month, and see how
+    much faster/slower they are getting on average.
+*   Workout buddies should be suggested based on averages. For instance, a user
+    with an average speed of 5mph should be recommended a buddy who's average speed
+    is also near 5mph.
+*   Users can view their ranking among other users on the site, as well as among
+    their workout buddies. Rankings are based on number of points achieved, which
+    is proportional to the number of workouts performed.
+
+--------------------------------------------------------------------------------
+
+Nonfunctional Requirements (FURPS)
+
+*   The site should have a responsive layout which looks presentable on mobile
+    devices.
+*   Response speed should be tolerable. All complex computations should be made in
+    the background.
+
+--------------------------------------------------------------------------------
+
+External Systems/Subsystems
+
+--------------------------------------------------------------------------------
+
+Hardware Requirements
+
+--------------------------------------------------------------------------------
+
+Future Plans
+
+--------------------------------------------------------------------------------
+
+Algorithms
+
+*	Scoring algorithm for weight lifting challenges uses Wilks Coefficient, as
+	well as the formula for One Rep Maximum.
+
+--------------------------------------------------------------------------------
+
+Similar Existing Software (with reasons why this is different/better)
+
+*   Words With Friends
+
+--------------------------------------------------------------------------------

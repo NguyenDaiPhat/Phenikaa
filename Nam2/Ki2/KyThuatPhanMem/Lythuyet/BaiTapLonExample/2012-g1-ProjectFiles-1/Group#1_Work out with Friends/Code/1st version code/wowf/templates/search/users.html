@@ -1,0 +1,11 @@
+{% extends 'search/base.html' %}
+{% import 'utils.html' as util with context %}
+{% block stream %}
+    {% if form.q.data %}
+        <strong>{{ stream.item_count|pluralize('user', 'users') }} found for <em>"{{ form.q.data }}"</em></strong>
+    {% endif %}
+    {% if stream %}
+        {{ util.user_stream(stream) }}
+        {{ util.pagination(stream) }}
+    {% endif %}
+{% endblock %}

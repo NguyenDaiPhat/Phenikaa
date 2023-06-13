@@ -1,0 +1,12 @@
+{% extends 'user/notifications/base.html' %}
+{% import 'utils.html' as util with context %}
+{% block stream %}
+    {% if stream %}
+        {{ util.notification_stream(stream) }}
+        {{ util.pagination(stream) }}
+    {% else %}
+        <p class="status">
+            You have no notifications.
+        </p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,5 @@
+<map id="wowf.forms.workout.UploadBenchPressWorkoutForm" name="wowf.forms.workout.UploadBenchPressWorkoutForm">
+<area shape="rect" id="node2" href="$classwowf_1_1forms_1_1workout_1_1_upload_weight_workout_form.html" title="{wowf.forms.workout.Upload\lWeightWorkoutForm\n|+ repetitions\l|}" alt="" coords="5,291,189,394"/>
+<area shape="rect" id="node4" href="$classwowf_1_1forms_1_1workout_1_1_upload_workout_form.html" title="{wowf.forms.workout.Upload\lWorkoutForm\n||}" alt="" coords="5,139,189,242"/>
+<area shape="rect" id="node6" href="$classwowf_1_1forms_1_1_form.html" title="Updated form object, which accepts a state variable to assist in more complex validation." alt="" coords="36,5,159,91"/>
+</map>

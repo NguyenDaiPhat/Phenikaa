@@ -1,0 +1,5 @@
+<map id="wowf.lib.predicates.BasePredicate" name="wowf.lib.predicates.BasePredicate">
+<area shape="rect" id="node3" href="$classwowf_1_1lib_1_1predicates_1_1_logged_in.html" title="View predicate to check whether user is logged in." alt="" coords="5,217,195,303"/>
+<area shape="rect" id="node5" href="$classwowf_1_1lib_1_1predicates_1_1_request_method.html" title="Context found subscriber predicate to check against request method." alt="" coords="219,209,405,311"/>
+<area shape="rect" id="node7" href="$classwowf_1_1lib_1_1predicates_1_1_route_name.html" title="Context found subscriber predicate to check against route name." alt="" coords="429,217,637,303"/>
+</map>

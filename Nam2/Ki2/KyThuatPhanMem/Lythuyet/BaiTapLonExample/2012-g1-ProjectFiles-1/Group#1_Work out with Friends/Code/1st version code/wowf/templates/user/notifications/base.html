@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% set title = 'Notifications' %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    <div class="stream-wrapper">
+        <ul class="tabs">
+            <li>
+                <a href="{{ request.route_url('user.notifications.unconfirmed') }}" {{ util.mark_selected_route('user.notifications.unconfirmed') }}>
+                    Unread
+                </a>
+            </li>
+            <li>
+                <a href="{{ request.route_url('user.notifications.all') }}" {{ util.mark_selected_route('user.notifications.all') }}>
+                    All Notifications
+                </a>
+            </li>
+        </ul>
+        {% block stream %}{% endblock %}
+    </div>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% set title = '%s - %s' % (challenge, challenge.opponents) %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    {{ util.challenge_card(challenge, accept_deny_challenge_form, upload_workout_form) }}
+{% endblock %}

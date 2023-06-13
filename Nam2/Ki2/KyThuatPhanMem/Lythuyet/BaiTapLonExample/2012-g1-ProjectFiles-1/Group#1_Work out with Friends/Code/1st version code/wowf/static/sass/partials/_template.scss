@@ -1,0 +1,130 @@
+$padding: em(10px);
+$footer_height: em(25px);
+
+:focus {
+    outline: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+    color: $off_black;
+    font: normal normal normal 80%/1.5em $sans_serif_fonts;
+}
+
+.wrapper {
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    clear: both;
+    margin: 0 auto;
+    padding: $padding;
+}
+
+#top-wrapper {
+	height: auto !important;
+	height: 100%;
+	margin-bottom: -$footer_height; // Negative height of the footer
+	min-height: 100%;
+}
+
+#body-wrapper {
+    padding-bottom: $footer_height;
+}
+
+#footer-wrapper {
+	height: $footer_height;
+	margin-top: -$footer_height;
+	position: relative;
+}
+
+#header {
+    background: $off_black;
+    border: 1px solid $black;
+    border-top: none;
+    color: $white;
+    @include clearfix;
+    a {
+        text-decoration: none;
+    }
+    input {
+        border: none;
+        height: 100%;
+        @include border-radius(0);
+    }
+    .logo-box {
+        display: block;
+        float: left;
+    }
+    .logo {
+        color: $white;
+        display: inline-block;
+        font-family: arial;
+        font-size: em(20px);
+        font-weight: bold;
+        line-height: em(20px);
+    }
+    .tagline {
+        display: inline-block;
+        color: $dark_red;
+        font-size: em(12px);
+        vertical-align: bottom;
+    }
+    .dropdown {
+        float: right;
+        margin-top: em(5px);
+        .toggle {
+            color: $white;
+            &:after {
+                content: $grid_icon;
+                font-size: em(32px);
+            }
+            &.alert {
+                color: $red;
+                @include text-shadow(2px 2px 2px $black);
+            }
+        }
+        .menu {
+            right: -$padding;
+        }
+    }
+    .search-bar {
+        min-width: em(250px);
+        input[type=text] {
+            $_padding: em(15px);
+            padding-top: $_padding;
+            padding-bottom: $_padding;
+        }
+        input[type=submit] {
+            height: em(image-height($search_icon));
+        }
+    }
+}
+
+#body {
+    padding-bottom: 2 * $padding;
+    padding-top: 2 * $padding;
+}
+
+#footer {
+    background: $off_white;
+    border: 1px solid $border_color;
+    border-bottom: none;
+    height: 100%;
+    text-align: center;
+    .copyright {
+        color: $light_gray;
+        font-size: em(12px);
+        margin: 0;
+        padding: 0;
+    }
+    .metadata {
+        display: inline-block;
+        margin: 0;
+    }
+}

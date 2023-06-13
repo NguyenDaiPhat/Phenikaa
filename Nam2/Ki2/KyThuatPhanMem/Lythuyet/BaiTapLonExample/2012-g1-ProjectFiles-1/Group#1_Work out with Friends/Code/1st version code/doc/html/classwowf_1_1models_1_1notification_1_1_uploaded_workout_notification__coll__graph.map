@@ -1,0 +1,6 @@
+<map id="wowf.models.notification.UploadedWorkoutNotification" name="wowf.models.notification.UploadedWorkoutNotification">
+<area shape="rect" id="node2" href="$classwowf_1_1models_1_1notification_1_1___notification.html" title="{wowf.models.notification.\l_Notification\n||+ id()\l}" alt="" coords="5,529,176,631"/>
+<area shape="rect" id="node4" href="$classwowf_1_1models_1_1notification_1_1_notification.html" title="{wowf.models.notification.\lNotification\n|+ id\l+ notification_type_id\l+ created_at\l+ users\l&#45; __mapper_args__\l|+ __unicode__()\l+ add_recipients()\l}" alt="" coords="200,485,371,675"/>
+<area shape="rect" id="node6" href="$classwowf_1_1models_1_1meta_1_1_base.html" title="{wowf.models.meta.Base\n|+ query\l|+ __str__()\l+ __repr__()\l+ __unicode__()\l+ get_by_id()\l+ create()\l+ delete()\l}" alt="" coords="179,246,344,418"/>
+<area shape="rect" id="node8" href="$classwowf_1_1lib_1_1fulltext_1_1_fulltext_base.html" title="Adds support for fulltext searching to SQLAlchemy&#39;s Base object." alt="" coords="167,5,356,195"/>
+</map>

@@ -1,0 +1,5 @@
+@media #{$tablet} {
+    #header .search-bar {
+        min-width: em(400px);
+    }
+}

@@ -1,0 +1,94 @@
+$margin: em(20px);
+
+.challenge {
+    text-align: center;
+    * {
+        text-align: center;
+    }
+    .title {
+        font-size: em(16px);
+        font-weight: normal;
+        margin: 0 0 em(5px);
+        text-transform: capitalize;
+        @include force-wrap;
+    }
+    table {
+        margin: $margin 0;
+    }
+    td {
+        border: 2px ridge $off_white;
+        padding: em(8px);
+        vertical-align: top;
+        width: 48%;
+        &.highlight {
+            border-color: $yellow;
+        }
+    }
+    .display-name {
+        font-size: em(18px);
+        a {
+            color: $dark_gray;
+        }
+    }
+    .accepted,
+    .completed {
+        color: $green;
+    }
+    .denied {
+        color: $red;
+    }
+    .pending {
+        color: $gray;
+    }
+    .accept-deny-challenge-form {
+        input[type=submit] {
+            background: none;
+            border: none;
+            color: $blue;
+            display: inline-block;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+            text-decoration: underline;
+            width: auto;
+        }
+    }
+    .upload-workout-form {
+        margin: $margin 0;
+        input[type=text],
+        input[type=submit] {
+            font-weight: normal;
+            padding: em(2px);
+        }
+        input[type=file] {
+            border-style: dotted;
+            padding: 0;
+        }
+    }
+}
+
+.change-interest-form {
+    margin: em(10px) 0 0;
+    input[type=submit] {
+        color: $white;
+        display: block;
+        @include background($blue);
+        &.following {
+            color: $gray;
+            @include background($off_white);
+        }
+    }
+}
+
+.create-challenge-form {
+    .buddies {
+        strong {
+            display: block;
+            margin-bottom: em(5px);
+        }
+    }
+}
+
+.open {
+    color: $red;
+}

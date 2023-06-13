@@ -1,0 +1,6 @@
+<map id="wowf.forms.challenge.CreateDeviceChallengeForm" name="wowf.forms.challenge.CreateDeviceChallengeForm">
+<area shape="rect" id="node7" href="$classwowf_1_1forms_1_1challenge_1_1_create_endurance_challenge_form.html" title="{wowf.forms.challenge.Create\lEnduranceChallengeForm\n|+ duration\l|+ create_challenge()\l}" alt="" coords="5,443,197,546"/>
+<area shape="rect" id="node9" href="$classwowf_1_1forms_1_1challenge_1_1_create_speed_challenge_form.html" title="{wowf.forms.challenge.Create\lSpeedChallengeForm\n|+ distance\l|+ create_challenge()\l}" alt="" coords="221,443,413,546"/>
+<area shape="rect" id="node2" href="$classwowf_1_1forms_1_1challenge_1_1_create_challenge_form.html" title="{wowf.forms.challenge.Create\lChallengeForm\n|+ competitor\l|}" alt="" coords="113,139,305,242"/>
+<area shape="rect" id="node4" href="$classwowf_1_1forms_1_1_form.html" title="Updated form object, which accepts a state variable to assist in more complex validation." alt="" coords="148,5,271,91"/>
+</map>

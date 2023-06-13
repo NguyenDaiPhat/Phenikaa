@@ -1,0 +1,40 @@
+.card {
+    @include clearfix;
+    .image {
+        float: left;
+        margin-right: em(15px);
+    }
+    .info {
+        display: block;
+        overflow: hidden;
+    }
+}
+
+.profile-card {
+    @extend .card;
+    margin-bottom: em(10px);
+    .display-name {
+        font-size: em(18px);
+        margin-bottom: em(5px);
+    }
+    .details {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .description {
+        color: $gray;
+        clear: both;
+        display: inline-block;
+        margin-top: em(10px);
+        width: 100%;
+    }
+}
+
+.mini-profile-card {
+    @extend .card;
+    margin-bottom: em(15px);
+    * {
+        vertical-align: top;
+    }
+}

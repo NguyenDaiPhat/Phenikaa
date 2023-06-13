@@ -1,0 +1,4 @@
+<map id="wowf.models.pivot_tables.UserChallenge" name="wowf.models.pivot_tables.UserChallenge">
+<area shape="rect" id="node2" href="$classwowf_1_1models_1_1meta_1_1_base.html" title="{wowf.models.meta.Base\n|+ query\l|+ __str__()\l+ __repr__()\l+ __unicode__()\l+ get_by_id()\l+ create()\l+ delete()\l}" alt="" coords="17,243,183,415"/>
+<area shape="rect" id="node4" href="$classwowf_1_1lib_1_1fulltext_1_1_fulltext_base.html" title="Adds support for fulltext searching to SQLAlchemy&#39;s Base object." alt="" coords="5,5,195,195"/>
+</map>

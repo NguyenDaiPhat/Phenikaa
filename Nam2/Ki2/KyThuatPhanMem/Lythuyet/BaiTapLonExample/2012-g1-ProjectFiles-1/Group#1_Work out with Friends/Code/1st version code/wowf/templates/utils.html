@@ -1,0 +1,521 @@
+{% macro mark_selected_route(route_name) %}
+    {{ dict(class='selected')|xmlattr if request.matched_route.name == route_name }}
+{% endmacro %}
+
+
+{% macro pagination(collection) %}
+    {% if collection.page != collection.last_page %}
+        <div class="pagination">{{ collection.pager('$link_next', symbol_next='More') }}</div>
+    {% endif %}
+{% endmacro %}
+
+
+{% macro form_field(field, show_label=True) %}
+    {{ field.label if show_label }}
+    {% set description = field.description or field.label.text %}
+    {{ field(title=description, **kwargs)|safe }}
+    {% if field.errors %}
+        <div class="error">{{ field.errors.pop() }}</div>
+    {% endif %}
+{% endmacro %}
+
+
+{% macro confirm_notifications_form(form, action=None) %}
+    <form action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <input type="submit" name="confirm_notifications" value="Confirm All" />
+    </form>
+{% endmacro %}
+
+
+{% macro search_competitor_form_partial(form) %}
+    <div class="form-row">
+        {{ form_field(form.competitor, placeholder=form.competitor.description) }}
+    </div>
+    <div class="form-row buddies">
+        <strong>Choose a workout buddy</strong>
+        {% set buddies = request.user.get_buddies() %}
+        {% if buddies %}
+            {{ user_tiles(buddies) }}
+        {% else %}
+            <p class="status">You are not buddies with anybody right now.</p>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+
+{% macro create_speed_challenge_form(form, action=None) %}
+    <form class="create-challenge-form" action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <div class="form-row">
+            {{ form_field(form.distance) }}
+        </div>
+        {{ search_competitor_form_partial(form) }}
+        <div class="form-row">
+            <input type="submit" name="create_challenge" value="Create Challenge" />
+        </div>
+	</form>
+{% endmacro %}
+
+
+{% macro create_endurance_challenge_form(form, action=None) %}
+    <form class="create-challenge-form" action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <div class="form-row">
+            {{ form_field(form.duration) }}
+        </div>
+        {{ search_competitor_form_partial(form) }}
+        <div class="form-row">
+            <input type="submit" name="create_challenge" value="Create Challenge" />
+        </div>
+	</form>
+{% endmacro %}
+
+
+{% macro create_bench_press_challenge_form(form, action=None) %}
+    <form class="create-challenge-form" action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <div class="form-row">
+            {{ form_field(form.percentage) }}
+        </div>
+        {{ search_competitor_form_partial(form) }}
+        <div class="form-row">
+            <input type="submit" name="create_challenge" value="Create Challenge" />
+        </div>
+	</form>
+{% endmacro %}
+
+
+{% macro create_squat_challenge_form(form, action=None) %}
+    <form class="create-challenge-form" action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <div class="form-row">
+            {{ form_field(form.percentage) }}
+        </div>
+        {{ search_competitor_form_partial(form) }}
+        <div class="form-row">
+            <input type="submit" name="create_challenge" value="Create Challenge" />
+        </div>
+	</form>
+{% endmacro %}
+
+
+{% macro upload_device_workout_form(form, action=None) %}
+    <form class="upload-workout-form" action="{{ action or '' }}" method="post" enctype="multipart/form-data">
+        {{ g.token_field }}
+        <div class="form-row">
+            {{ form_field(form.workout_report, False) }}
+        </div>
+        <div class="form-row">
+            <input type="submit" name="upload_workout" value="Upload Workout Report" />
+        </div>
+	</form>
+{% endmacro %}
+
+
+{% macro upload_weight_workout_form(form, action=None) %}
+    <form class="upload-workout-form" action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <div class="form-row">
+            {{ form_field(form.repetitions, False, placeholder='type in repetitions') }}
+        </div>
+        <div class="form-row">
+            <input type="submit" name="upload_workout" value="Upload Workout" />
+        </div>
+	</form>
+{% endmacro %}
+
+
+{% macro reset_password_form(form, action=None) %}
+    <form action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <h1>Forgot your password?</h1>
+        <p>Enter the email you signed up with.</p>
+        <div class="form-row">
+            {{ form_field(form.email, show_label=False, placeholder=form.email.label.text) }}
+        </div>
+        <div class="form-row">
+            <input type="submit" name="reset_password" value="Reset Password" />
+        </div>
+    </form>
+{% endmacro %}
+
+
+{% macro send_invite_form(form, action=None) %}
+    <form action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <h1>Invite your friends.</h1>
+        {% for field in form.emails %}
+            <div class="form-row clonable">
+                {{ form_field(field, show_label=False, placeholder=field.label.text) }}
+            </div>
+        {% endfor %}
+        <ul class="metadata" style="display: none; font-size: 1em; margin: 1em 0;">
+            <li><a class="add-clone">Add Email</a></li>
+            <li><a class="remove-clone">Remove Email</a></li>
+        </ul>
+        <div class="form-row">
+            <input type="submit" name="send_invite" value="Send Invitation" />
+        </div>
+    </form>
+{% endmacro %}
+
+
+{% macro registration_form(form, action=None) %}
+    <form action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <h1>Sign up and get fit!</h1>
+        <div class="form-row">
+            {{ form_field(form.username) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.email) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.password) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.gender) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.dob, placeholder=form.dob.description) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.weight) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.height) }}
+        </div>
+        <div class="form-row">
+            <p class="suggestion">
+                By creating an account, you agree to the
+                <a>terms of service</a>.
+            </p>
+        </div>
+        <div class="form-row">
+            <input type="submit" name="registration" value="Create Account" />
+        </div>
+        <div class="form-row">
+            <p>Already have an account?</p>
+            <p><a href="{{ request.route_url('user.login') }}">Log In</a></p>
+        </div>
+    </form>
+{% endmacro %}
+
+
+{% macro login_form(form, action=None) %}
+    <form class="login-form" action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <h1>Sign in and work out!</h1>
+        <div class="form-row">
+            {{ form_field(form.email) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.password) }}
+            <a href="{{ request.route_url('account.password.request') }}">Forgot your password?</a>
+        </div>
+        <div class="form-row remember-me">
+			<label>{{ form.remember_me }} Remember Me</label>
+		</div>
+        <div class="form-row">
+            <input type="submit" name="login" value="Log In" />
+        </div>
+        <div class="form-row">
+            <p>Don't have an account?</p>
+            <p><a href="{{ request.route_url('user.register') }}">Register</a></p>
+        </div>
+    </form>
+{% endmacro %}
+
+
+{% macro search_form(form, action=None) %}
+    <form class="search-form" action="{{ action or '' }}" method="get">
+        <div class="form-row">
+            <div class="bar">
+                {{ form.q }}
+                <input type="submit" value="Search" />
+            </div>
+            {% if form.q.errors %}
+                <div class="error">{{ form.q.errors.pop() }}</div>
+            {% endif %}
+        </div>
+    </form>
+{% endmacro %}
+
+
+{% macro update_profile_form(form, action=None) %}
+    <form class="profile-form" action="{{ action or '' }}" method="post" enctype="multipart/form-data">
+        {{ g.token_field }}
+        <div class="form-row">
+            {{ form_field(form.username) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.email) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.gender) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.dob, placeholder=form.dob.description) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.weight) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.height) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.timezone) }}
+        </div>
+        <div class="form-row">
+            {{ form.avatar.label }}
+            <div class="card">
+                <label class="image" for="avatar">
+                    <img src="{{ request.static_url(request.user.avatar.large) }}"
+                         alt="{{ request.user.fullname }}"/>
+                </label>
+                <div class="info">
+                    {{ form.avatar(title=description) }}
+                    {% if form.avatar.errors %}
+                        <div class="error">{{ form.avatar.errors.pop() }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <input type="submit" name="update_profile" value="Save" />
+        </div>
+    </form>
+{% endmacro %}
+
+
+{% macro change_password_form(form, action=None) %}
+    <form action="{{ action or '' }}" method="post">
+        {{ g.token_field }}
+        <div class="form-row">
+            {{ form_field(form.current_password) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.new_password) }}
+        </div>
+        <div class="form-row">
+            {{ form_field(form.confirm_new_password) }}
+        </div>
+        <div class="form-row">
+            <input type="submit" name="change_password" value="Save" />
+        </div>
+    </form>
+{% endmacro %}
+
+
+{% macro challenge_stream(challenges) %}
+    <ul class="stream">
+    {% for challenge in challenges %}
+        <li class="item card">
+            <a class="image" href="{{ request.route_url('user.view.challenges', id=challenge.creator.id) }}">
+                <img src="{{ request.static_url(challenge.creator.avatar.normal) }}" alt="{{ challenge.creator.fullname }}" title="{{ challenge.creator.fullname }}" />
+            </a>
+            <div class="info">
+                <h3 class="title">
+                    <a href="{{ request.route_url('challenge.view', id=challenge.id) }}">{{ challenge }}</a>
+                </h3>
+                <ul class="metadata">
+                    <li><a href="{{ request.route_url('user.view.challenges', id=challenge.creator.id) }}">{{ challenge.creator.username }}</a></li>
+                    <li>{{ challenge.created_at|datetimeformat(timezone=request.user.timezone) }}</li>
+                    {% if not challenge.is_completed() %}
+                        <li class="open">Incomplete</li>
+                    {% endif %}
+                </ul>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+{% endmacro %}
+
+
+{% macro challenge_card(challenge, accept_deny_challenge_form=None, upload_workout_form=None) %}
+    <div class="challenge">
+        <h1 class="title">{{ challenge }}</h1>
+        <p class="suggestion">{{ challenge.description }}</p>
+        {% if challenge.is_device_challenge() and not challenge.is_completed() and request.user.in_challenge(challenge) %}
+            <p><strong>Note:</strong> A heart rate device is required for this challenge.</p>
+        {% endif %}
+        <table>
+            <tr>
+            {% for user in challenge.competitors %}
+                <td {{ dict(class='highlight')|xmlattr if challenge.is_completed() and challenge.user_is_winner(user) }}>
+                    <ul>
+                        <li>
+                            <a class="image" href="{{ request.route_url('user.view.challenges', id=user.id) }}">
+                                <img src="{{ request.static_url(user.avatar.normal) }}" alt="{{ user.username }}" />
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="display-name"><a href="{{ request.route_url('user.view.challenges', id=user.id) }}">{{ user.username }}{% if request.user.is_user(user) %} (you){% endif %}</a></h3>
+                        </li>
+                        {% if user.accepted_challenge(challenge) %}
+                            <li><strong class="accepted">Accepted Challenge</strong></li>
+                        {% elif user.denied_challenge(challenge) %}
+                            <li><strong class="denied">Denied Challenge</strong></li>
+                        {% else %}
+                            {% if request.user.is_user(user) and accept_deny_challenge_form %}
+                                <form class="accept-deny-challenge-form" action="" method="post">
+                                    {{ g.token_field }}
+                                    {{ accept_deny_challenge_form.accept }}
+                                    &ndash;
+                                    {{ accept_deny_challenge_form.deny }}
+                                </form>
+                            {% else %}
+                                <li><strong class="pending">Awaiting Acceptance</strong></li>
+                            {% endif %}
+                        {% endif %}
+                        {% if challenge.is_weight_challenge() %}
+                            <li>Weight To Lift: {{ challenge.calculate_user_weight(user) }}kg</li>
+                        {% endif %}
+                        <li>
+                            {% set workout = user.get_workout_for_challenge(challenge) %}
+                            {% if workout %}
+                                {% if challenge.is_completed() or request.user.is_user(user) %}
+                                    {% if challenge.is_weight_challenge() %}
+                                        Repetitions Performed: {{ workout.repetitions }}
+                                    {% elif challenge.is_speed_challenge() %}
+                                        Speed: {{ workout.speed }} m/s
+                                    {% elif challenge.is_endurance_challenge() %}
+                                        Heart Rate: {{ workout.heart_rate }}
+                                        <br />
+                                        Calories Burned: {{ workout.calories_burned }}
+                                    {% endif %}
+                                    <br />
+                                    Points Received: {{ workout.points }}
+                                    {% if not workout.points %}
+                                        <br />
+                                        <span class="open">0 points due to a failure to meet requirements.</span>
+                                    {% endif %}
+                                {% endif %}
+                                <br />
+                                <strong class="completed">Challenge Completed</strong>
+                                {% if challenge.is_completed() and challenge.user_is_winner(user) %}
+                                    <br />
+                                    <br />
+                                    <h4>WINNER!</h4>
+                                {% endif %}
+                            {% else %}
+                                {% if request.user.is_user(user) and upload_workout_form %}
+                                    {% if challenge.is_device_challenge() %}
+                                        {{ upload_device_workout_form(upload_workout_form) }}
+                                    {% else %}
+                                        {{ upload_weight_workout_form(upload_workout_form) }}
+                                    {% endif %}
+                                {% else %}
+                                    <strong class="pending">Awaiting Completion</strong>
+                                {% endif %}
+                            {% endif %}
+                        </li>
+                    </ul>
+                </td>
+            {% endfor %}
+            </tr>
+        </table>
+    </div>
+{% endmacro %}
+
+
+{% macro user_card(user, add_remove_buddy_form=None) %}
+    <div class="profile-card">
+        <a class="image" href="{{ request.static_url(user.avatar) }}">
+            <img src="{{ request.static_url(user.avatar.large) }}" alt="{{ user.username }}" />
+        </a>
+        <div class="info">
+            <h3 class="display-name">{{ user.username }}</h3>
+            <ul class="details">
+                <li><strong>Points:</strong> {{ user.total_points }}</li>
+                <li><strong>Age:</strong> {{ user.age }}</li>
+                <li><strong>Gender:</strong> {{ 'Female' if user.gender == 'F' else 'Male' }}</li>
+                {% if request.user.is_user(user) %}
+                    <li>
+                        <strong>BMI:</strong> {{ user.bmi }}
+                        &ndash;
+                        <a target="_blank" href="http://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html#Interpreted">{{ user.bmi_category }}</a>
+                    </li>
+                {% endif %}
+                {% if not request.user.is_user(user) and add_remove_buddy_form %}
+                    <li>
+                        <form class="buddy-form" action="" method="post">
+                            {{ g.token_field }}
+                            {% if request.user.is_buddy(user) %}
+                                {{ add_remove_buddy_form.remove(class='buddy') }}
+                            {% else %}
+                                {{ add_remove_buddy_form.add }}
+                            {% endif %}
+                        </form>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+{% endmacro %}
+
+
+{% macro mini_user_card(user) %}
+    <div class="mini-profile-card">
+        <a class="image" href="{{ request.route_url('user.view.challenges', id=user.id) }}">
+            <img src="{{ request.static_url(user.avatar.small) }}" alt="{{ user.username }}" title="{{ user.username }}" />
+        </a>
+        <div class="info">
+            <ul class="metadata">
+                <li><a href="{{ request.route_url('user.view.challenges', id=user.id) }}">{{ user.username }}</a></li>
+                <li>{{ user.total_points }} points</li>
+                <li>{{ user.age }} years old</li>
+                <li>{{ 'female' if user.gender == 'F' else 'male' }}</li>
+            </ul>
+        </div>
+    </div>
+{% endmacro %}
+
+
+{% macro user_stream(users) %}
+    <ul class="stream">
+    {% for user in users %}
+        <li class="item card">
+            <a class="image" href="{{ request.route_url('user.view.challenges', id=user.id) }}">
+                <img src="{{ request.static_url(user.avatar.normal) }}" alt="{{ user.username }}" title="{{ user.username }}" />
+            </a>
+            <div class="info">
+                <h3 class="title">
+                    <a href="{{ request.route_url('user.view.challenges', id=user.id) }}">{{ user.username }}</a>
+                </h3>
+                <ul class="metadata">
+                    <li>{{ user.age }} year old {{ 'female' if user.gender == 'F' else 'male' }}</li>
+                    <li>{{ user.total_points }} points</li>
+                </ul>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+{% endmacro %}
+
+
+{% macro user_tiles(users) %}
+    {% for user in users %}
+        <a data-username="{{ user.username }}" href="{{ request.route_url('user.view.challenges', id=user.id) }}">
+            <img src="{{ request.static_url(user.avatar.small) }}" alt="{{ user.username }}"
+                 title="{{ user.username }} - {{ user.age }} year old {{ 'female' if user.gender == 'F' else 'male' }}" />
+        </a>
+    {% endfor %}
+{% endmacro %}
+
+
+{% macro notification_stream(notifications) %}
+    <ul class="stream">
+    {% for ((year, month, day), notifications) in notifications|groupbydate %}
+        <li class="item">
+            <strong>{{ h.datetime.datetime(year, month, day)|datetimeformat('%A, %B %d', timezone=request.user.timezone) }}</strong>
+            <ul class="stream">
+                {% for notification in notifications %}
+                    <li class="item">{{ notification.message|safe }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+{% endmacro %}

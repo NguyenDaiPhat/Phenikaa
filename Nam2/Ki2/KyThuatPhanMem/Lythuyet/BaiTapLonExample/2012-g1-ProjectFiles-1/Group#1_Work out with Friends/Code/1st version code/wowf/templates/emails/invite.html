@@ -1,0 +1,8 @@
+{% set days = age.days %}
+{% set registration_url = request.route_url('user.register') %}
+<strong>You've been invited to join Workout With Friends!</strong>
+<p>
+    {{ user.fullname if user else 'We' }} would like to invite you to join Workout
+    With Friends! Please visit the link belo to sign up for a free account.
+</p>
+<a href="{{ registration_url }}">{{ registration_url }}</a>

@@ -1,0 +1,138 @@
+$input_padding: em(8px);
+$margin: em(25px);
+
+label {
+    cursor: pointer;
+    display: block;
+    font-size: em(13px);
+}
+
+input,
+select,
+textarea {
+    background: $white;
+    border: 1px solid $border_color;
+    font: inherit;
+    font-size: em(13px);
+    padding: $input_padding;
+    width: 100%;
+    @include border-radius($medium_radius);
+    @include box-sizing(border-box);
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    width: auto;
+}
+
+input[type=submit] {
+    @include button;
+}
+
+input[type=file] {
+    background: transparent;
+}
+
+textarea {
+    min-height: em(100px);
+    overflow: auto;
+    resize: vertical;
+}
+
+.form-row {
+    margin-bottom: em(10px);
+    @include clearfix;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    p {
+        text-align: center;
+    }
+    .error {
+        background-image: none;
+        padding: $input_padding / 2;
+    }
+}
+
+#recaptcha_area {
+    margin: 0 auto;
+}
+
+.bar-form {
+    $_label_width:  em(50px);
+    $_button_width: em(60px);
+    margin-bottom: $margin;
+    .bar {
+        border: 1px solid $border_color;
+        overflow: hidden;
+        position: relative;
+    }
+    label,
+    input {
+        border: none;
+        display: block;
+        font-size: em(15px);
+        margin: 0;
+        padding: em(10px) em(2px);
+        vertical-align: baseline;
+        @include border-radius(0);
+        @include box-sizing(border-box);
+    }
+    label,
+    input[type=submit] {
+        position: absolute;
+        top: 0;
+    }
+    label {
+        left: 0;
+        padding-left: em(8px);
+        width: $_label_width;
+    }
+    input[type=submit] {
+        @include background($gray);
+        color: $white;
+        right: 0;
+        width: $_button_width;
+    }
+    input[type=text] {
+        padding-left: $_label_width;
+        padding-right: $_button_width;
+        width: 100%;
+    }
+}
+
+.search-bar {
+    $_search_icon_height:   em(image-height($search_icon));
+    $_search_icon_width:    em(image-width($search_icon));
+    position: relative;
+    input[type=text] {
+        padding-right: ($input_padding * 1.5) + $_search_icon_width;
+    }
+    input[type=submit] {
+        background: transparent image-url($search_icon) center center no-repeat;
+        background-size: em(18px);
+        border: none;
+        height: $_search_icon_height;
+        margin-top: -($_search_icon_height / 2);
+        position: absolute;
+        right: $input_padding;
+        text-indent: -999em;
+        top: 50%;
+        width: $_search_icon_width;
+        z-index: 1;
+        @include opacity(0.5);
+    }
+    &:hover input[type=submit] {
+        @include opacity(1);
+    }
+}
+
+.search-form {
+    @extend .bar-form;
+    input[type=text] {
+        padding-left: $input_padding;
+    }
+}

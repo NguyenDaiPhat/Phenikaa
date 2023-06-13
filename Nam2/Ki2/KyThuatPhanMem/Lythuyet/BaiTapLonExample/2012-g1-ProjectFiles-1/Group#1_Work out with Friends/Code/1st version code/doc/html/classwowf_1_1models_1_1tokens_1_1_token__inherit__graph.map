@@ -1,0 +1,5 @@
+<map id="wowf.models.tokens.Token" name="wowf.models.tokens.Token">
+<area shape="rect" id="node3" href="$classwowf_1_1models_1_1tokens_1_1_invite_token.html" title="Invite new user token." alt="" coords="5,416,184,536"/>
+<area shape="rect" id="node5" href="$classwowf_1_1models_1_1tokens_1_1_login_token.html" title="Remember me login token." alt="" coords="208,347,384,605"/>
+<area shape="rect" id="node7" href="$classwowf_1_1models_1_1tokens_1_1_password_token.html" title="Reset password token." alt="" coords="408,425,611,527"/>
+</map>

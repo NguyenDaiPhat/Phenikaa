@@ -1,0 +1,6 @@
+{% extends 'challenge/create/base.html' %}
+{% set title = 'New Endurance Challenge' %}
+{% import 'utils.html' as util with context %}
+{% block create_challenge %}
+    {{ util.create_endurance_challenge_form(form) }}
+{% endblock %}

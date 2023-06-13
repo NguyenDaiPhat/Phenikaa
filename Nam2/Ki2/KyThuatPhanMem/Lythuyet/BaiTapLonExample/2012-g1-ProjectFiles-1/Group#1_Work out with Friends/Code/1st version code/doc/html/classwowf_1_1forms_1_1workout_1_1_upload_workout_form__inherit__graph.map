@@ -1,0 +1,9 @@
+<map id="wowf.forms.workout.UploadWorkoutForm" name="wowf.forms.workout.UploadWorkoutForm">
+<area shape="rect" id="node5" href="$classwowf_1_1forms_1_1workout_1_1_upload_device_workout_form.html" title="{wowf.forms.workout.Upload\lDeviceWorkoutForm\n|+ workout_report\l&#45; _samples\l&#45; _samples\l|+ validate_workout_report()\l}" alt="" coords="213,291,397,429"/>
+<area shape="rect" id="node11" href="$classwowf_1_1forms_1_1workout_1_1_upload_weight_workout_form.html" title="{wowf.forms.workout.Upload\lWeightWorkoutForm\n|+ repetitions\l|}" alt="" coords="421,309,605,411"/>
+<area shape="rect" id="node2" href="$classwowf_1_1forms_1_1_form.html" title="Updated form object, which accepts a state variable to assist in more complex validation." alt="" coords="348,5,471,91"/>
+<area shape="rect" id="node7" href="$classwowf_1_1forms_1_1workout_1_1_upload_endurance_workout_form.html" title="{wowf.forms.workout.Upload\lEnduranceWorkoutForm\n||+ upload_workout()\l}" alt="" coords="5,478,189,581"/>
+<area shape="rect" id="node9" href="$classwowf_1_1forms_1_1workout_1_1_upload_speed_workout_form.html" title="{wowf.forms.workout.Upload\lSpeedWorkoutForm\n||+ upload_workout()\l}" alt="" coords="213,478,397,581"/>
+<area shape="rect" id="node13" href="$classwowf_1_1forms_1_1workout_1_1_upload_bench_press_workout_form.html" title="{wowf.forms.workout.Upload\lBenchPressWorkoutForm\n||+ upload_workout()\l}" alt="" coords="421,478,605,581"/>
+<area shape="rect" id="node15" href="$classwowf_1_1forms_1_1workout_1_1_upload_squat_workout_form.html" title="{wowf.forms.workout.Upload\lSquatWorkoutForm\n||+ upload_workout()\l}" alt="" coords="629,478,813,581"/>
+</map>

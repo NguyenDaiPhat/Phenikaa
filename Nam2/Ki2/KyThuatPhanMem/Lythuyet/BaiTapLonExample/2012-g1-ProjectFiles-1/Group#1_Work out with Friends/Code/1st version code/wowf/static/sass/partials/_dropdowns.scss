@@ -1,0 +1,47 @@
+.dropdown {
+    position: relative;
+    .toggle {
+        cursor: pointer;
+        display: block;
+        &:after {
+            content: $triangle_icon;
+            @include opacity(0.7);
+        }
+        &:hover:after {
+            @include opacity(1);
+        }
+    }
+    .menu {
+        background: $white;
+        border: 1px solid $border_color;
+        display: none;
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        z-index: 1;
+        li {
+            border-bottom: 1px solid $border_color;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        a {
+            color: $dark_gray;
+            cursor: pointer;
+            display: block;
+            padding: em(15px) em(20px);
+            text-decoration: none;
+            white-space: nowrap;
+            &:active,
+            &:hover {
+                background: $blue;
+                color: $white;
+            }
+        }
+    }
+    &:hover .menu {
+        display: block;
+    }
+}

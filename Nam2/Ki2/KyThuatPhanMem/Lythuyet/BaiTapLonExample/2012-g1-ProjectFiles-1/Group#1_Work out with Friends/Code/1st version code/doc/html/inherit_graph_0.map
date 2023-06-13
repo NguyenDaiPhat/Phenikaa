@@ -1,0 +1,31 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classwowf_1_1forms_1_1_form.html" title="Updated form object, which accepts a state variable to assist in more complex validation." alt="" coords="7,443,129,472"/>
+<area shape="rect" id="node3" href="$classwowf_1_1forms_1_1challenge_1_1_accept_deny_challenge_form.html" title="wowf.forms.challenge.Accept\lDenyChallengeForm" alt="" coords="217,74,412,121"/>
+<area shape="rect" id="node5" href="$classwowf_1_1forms_1_1challenge_1_1_create_challenge_form.html" title="wowf.forms.challenge.Create\lChallengeForm" alt="" coords="219,143,411,190"/>
+<area shape="rect" id="node19" href="$classwowf_1_1forms_1_1search_1_1_search_form.html" title="wowf.forms.search.SearchForm" alt="" coords="211,213,419,243"/>
+<area shape="rect" id="node23" href="$classwowf_1_1forms_1_1user_1_1_add_buddy_form.html" title="wowf.forms.user.AddBuddyForm" alt="" coords="208,267,421,296"/>
+<area shape="rect" id="node25" href="$classwowf_1_1forms_1_1user_1_1_add_remove_buddy_form.html" title="wowf.forms.user.AddRemove\lBuddyForm" alt="" coords="217,319,412,366"/>
+<area shape="rect" id="node27" href="$classwowf_1_1forms_1_1user_1_1_change_password_form.html" title="wowf.forms.user.ChangePasswordForm" alt="" coords="187,389,443,419"/>
+<area shape="rect" id="node29" href="$classwowf_1_1forms_1_1user_1_1_confirm_notifications_form.html" title="wowf.forms.user.ConfirmNotificationsForm" alt="" coords="179,443,451,472"/>
+<area shape="rect" id="node31" href="$classwowf_1_1forms_1_1user_1_1_login_form.html" title="wowf.forms.user.LoginForm" alt="" coords="223,496,407,525"/>
+<area shape="rect" id="node33" href="$classwowf_1_1forms_1_1user_1_1_remove_buddy_form.html" title="wowf.forms.user.RemoveBuddyForm" alt="" coords="196,549,433,579"/>
+<area shape="rect" id="node35" href="$classwowf_1_1forms_1_1user_1_1_reset_password_form.html" title="wowf.forms.user.ResetPasswordForm" alt="" coords="192,603,437,632"/>
+<area shape="rect" id="node37" href="$classwowf_1_1forms_1_1user_1_1_send_invite_form.html" title="wowf.forms.user.SendInviteForm" alt="" coords="208,656,421,685"/>
+<area shape="rect" id="node39" href="$classwowf_1_1forms_1_1user_1_1_user_form.html" title="wowf.forms.user.UserForm" alt="" coords="224,709,405,739"/>
+<area shape="rect" id="node45" href="$classwowf_1_1forms_1_1workout_1_1_upload_workout_form.html" title="wowf.forms.workout.Upload\lWorkoutForm" alt="" coords="223,762,407,809"/>
+<area shape="rect" id="node7" href="$classwowf_1_1forms_1_1challenge_1_1_create_device_challenge_form.html" title="wowf.forms.challenge.Create\lDeviceChallengeForm" alt="" coords="519,74,711,121"/>
+<area shape="rect" id="node13" href="$classwowf_1_1forms_1_1challenge_1_1_create_weight_challenge_form.html" title="wowf.forms.challenge.Create\lWeightChallengeForm" alt="" coords="519,143,711,190"/>
+<area shape="rect" id="node9" href="$classwowf_1_1forms_1_1challenge_1_1_create_endurance_challenge_form.html" title="wowf.forms.challenge.Create\lEnduranceChallengeForm" alt="" coords="779,5,971,51"/>
+<area shape="rect" id="node11" href="$classwowf_1_1forms_1_1challenge_1_1_create_speed_challenge_form.html" title="wowf.forms.challenge.Create\lSpeedChallengeForm" alt="" coords="779,74,971,121"/>
+<area shape="rect" id="node15" href="$classwowf_1_1forms_1_1challenge_1_1_create_bench_press_challenge_form.html" title="wowf.forms.challenge.Create\lBenchPressChallengeForm" alt="" coords="779,143,971,190"/>
+<area shape="rect" id="node17" href="$classwowf_1_1forms_1_1challenge_1_1_create_squat_challenge_form.html" title="wowf.forms.challenge.Create\lSquatChallengeForm" alt="" coords="779,213,971,259"/>
+<area shape="rect" id="node21" href="$classwowf_1_1forms_1_1search_1_1_search_user_form.html" title="wowf.forms.search.Search\lUserForm" alt="" coords="525,213,704,259"/>
+<area shape="rect" id="node41" href="$classwowf_1_1forms_1_1user_1_1_registration_form.html" title="wowf.forms.user.RegistrationForm" alt="" coords="504,656,725,685"/>
+<area shape="rect" id="node43" href="$classwowf_1_1forms_1_1user_1_1_update_profile_form.html" title="wowf.forms.user.UpdateProfileForm" alt="" coords="499,709,731,739"/>
+<area shape="rect" id="node47" href="$classwowf_1_1forms_1_1workout_1_1_upload_device_workout_form.html" title="wowf.forms.workout.Upload\lDeviceWorkoutForm" alt="" coords="523,762,707,809"/>
+<area shape="rect" id="node53" href="$classwowf_1_1forms_1_1workout_1_1_upload_weight_workout_form.html" title="wowf.forms.workout.Upload\lWeightWorkoutForm" alt="" coords="523,831,707,878"/>
+<area shape="rect" id="node49" href="$classwowf_1_1forms_1_1workout_1_1_upload_endurance_workout_form.html" title="wowf.forms.workout.Upload\lEnduranceWorkoutForm" alt="" coords="783,693,967,739"/>
+<area shape="rect" id="node51" href="$classwowf_1_1forms_1_1workout_1_1_upload_speed_workout_form.html" title="wowf.forms.workout.Upload\lSpeedWorkoutForm" alt="" coords="783,762,967,809"/>
+<area shape="rect" id="node55" href="$classwowf_1_1forms_1_1workout_1_1_upload_bench_press_workout_form.html" title="wowf.forms.workout.Upload\lBenchPressWorkoutForm" alt="" coords="783,831,967,878"/>
+<area shape="rect" id="node57" href="$classwowf_1_1forms_1_1workout_1_1_upload_squat_workout_form.html" title="wowf.forms.workout.Upload\lSquatWorkoutForm" alt="" coords="783,901,967,947"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="wowf.models.workout._Workout" name="wowf.models.workout._Workout">
+<area shape="rect" id="node3" href="$classwowf_1_1models_1_1workout_1_1_device_workout.html" title="Base class for all workouts which require the use of a heart rate device." alt="" coords="239,158,433,261"/>
+<area shape="rect" id="node9" href="$classwowf_1_1models_1_1workout_1_1_weight_workout.html" title="Base class for all weight related workouts." alt="" coords="457,158,652,261"/>
+<area shape="rect" id="node5" href="$classwowf_1_1models_1_1workout_1_1_endurance_workout.html" title="{wowf.models.workout.Endurance\lWorkout\n|+ user\l+ challenge\l+ points\l+ heart_rate\l+ calories_burned\l+ heart_rate\l+ calories_burned\l&#45; __tablename__\l&#45; __mapper_args__\l|+ __init__()\l}" alt="" coords="5,310,219,551"/>
+<area shape="rect" id="node7" href="$classwowf_1_1models_1_1workout_1_1_speed_workout.html" title="{wowf.models.workout.Speed\lWorkout\n|+ user\l+ challenge\l+ points\l+ speed\l+ speed\l&#45; __tablename__\l&#45; __mapper_args__\l|+ __init__()\l}" alt="" coords="243,327,432,534"/>
+<area shape="rect" id="node11" href="$classwowf_1_1models_1_1workout_1_1_bench_press_workout.html" title="{wowf.models.workout.Bench\lPressWorkout\n|+ user\l+ challenge\l+ repetitions\l+ points\l&#45; __tablename__\l&#45; __mapper_args__\l|+ __init__()\l}" alt="" coords="459,336,648,525"/>
+<area shape="rect" id="node13" href="$classwowf_1_1models_1_1workout_1_1_squat_workout.html" title="{wowf.models.workout.Squat\lWorkout\n|+ user\l+ challenge\l+ repetitions\l+ points\l&#45; __tablename__\l&#45; __mapper_args__\l|+ __init__()\l}" alt="" coords="672,336,859,525"/>
+</map>

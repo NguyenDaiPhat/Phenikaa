@@ -1,0 +1,138 @@
+$padding: em(5px);
+$background_color: $off_white;
+
+
+@media #{$desktop} {
+    body {
+        background: $background_color;
+    }
+    .container {
+        max-width: 700px;
+        padding: $padding 0;
+    }
+    #header-wrapper {
+        @include background($off_black);
+        border-bottom: 1px solid $black;
+    }
+    #header {
+        $_padding: em(4px);
+        background: none;
+        border: none;
+        .dropdown {
+            margin-top: em(2px);
+            .toggle {
+                display: none;
+            }
+            .menu {
+                background: none;
+                border: none;
+                display: block;
+                position: static;
+                right: 0;
+                li {
+                    border: none;
+                    float: left;
+                    margin-left: em(8px);
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+                a {
+                    color: $white;
+                    display: block;
+                    font-size: em(13px);
+                    padding: $_padding em(10px);
+                    @include border-radius($medium_radius);
+                    &:hover {
+                        background: $dark_gray;
+                    }
+                    &.alert {
+                        background: $yellow;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .search-bar {
+            width: em(220px);
+            min-width: inherit;
+            input[type=text] {
+                padding-top: $_padding;
+                padding-bottom: $_padding;
+                @include border-radius($medium_radius);
+            }
+        }
+    }
+    #body {
+        background: $white;
+        border: 1px solid $border_color;
+        margin: em(30px) auto;
+        padding: em(20px);
+        @include border-radius($medium_radius);
+    }
+    #footer {
+        background: none;
+        border: none;
+    }
+    input,
+    select,
+    textarea,
+    .pagination a {
+        padding: em(4px);
+    }
+    .login-form .remember-me {
+        display: block;
+    }
+    .tabs {
+        background: none;
+        border-bottom: 1px solid $border_color;
+        padding: 0 em(10px);
+        li {
+            margin-bottom: em(-1px);
+            margin-right: em(5px);
+            &:after {
+                display: none;
+            }
+        }
+        a {
+            border: 1px solid transparent;
+            color: $dark_gray;
+            display: block;
+            padding: em(4px) em(12px);
+            text-decoration: none;
+            &:hover,
+            &.selected,
+            &.disabled {
+                color: $dark_gray;
+                border-color: $border_color;
+                border-bottom-color: $white;
+                @include border-radius($medium_radius $medium_radius 0 0);
+                @include box-shadow(0 -1px 0 $border_color);
+            }
+        }
+    }
+    .stream .item {
+        padding: em(10px) 0;
+    }
+    .stream-wrapper .header {
+        background: none;
+        border-bottom: 1px solid $border_color;
+        font-size: em(15px);
+        margin: 0;
+        padding: 0 0 em(8px);
+    }
+    .challenge {
+        .title {
+            font-size: em(22px);
+            line-height: em(27px, 22px);
+        }
+        .navbar,
+        .metadata {
+            font-size: em(15px);
+        }
+    }
+    .profile-card .display-name {
+        font-size: em(20px);
+        line-height: em(20px, 20px);
+    }
+}

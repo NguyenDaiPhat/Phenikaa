@@ -1,0 +1,4 @@
+<map id="wowf.lib.utils.Storage" name="wowf.lib.utils.Storage">
+<area shape="rect" id="node3" href="$classwowf_1_1config_1_1_settings.html" title="Storage container for settings, which attempts to guess the type, e.g., number, boolean, etc." alt="" coords="5,174,149,277"/>
+<area shape="rect" id="node5" href="$classwowf_1_1forms_1_1_state.html" title="Storage object to pass state to forms for more complex validation." alt="" coords="173,183,299,268"/>
+</map>

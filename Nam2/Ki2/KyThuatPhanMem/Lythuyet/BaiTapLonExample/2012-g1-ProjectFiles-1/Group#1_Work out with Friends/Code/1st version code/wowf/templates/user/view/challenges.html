@@ -1,0 +1,9 @@
+{% extends 'user/view/base.html' %}
+{% import 'utils.html' as util with context %}
+{% block stream %}
+    <strong>{{ stream.item_count|pluralize('challenge', 'challenges') }}</strong>
+    {% if stream %}
+        {{ util.challenge_stream(stream) }}
+        {{ util.pagination(stream) }}
+    {% endif %}
+{% endblock %}

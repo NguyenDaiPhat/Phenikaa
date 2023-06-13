@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% set title = 'Unexpected Error' %}
+{% block body %}
+    <h1>Unexpected Error</h1>
+    <p>
+        Sorry, but something unexpected has happened. Those in charge have been
+        notified and the problem should be fixed soon (hopefully).
+    </p>
+    <p>
+        If this is not the first time you're experiencing this problem, please
+        <a href="mailto:{{ g.settings.manager_emails }}?Subject=Error">contact us</a> and
+        let us know about it.
+    </p>
+{% endblock %}

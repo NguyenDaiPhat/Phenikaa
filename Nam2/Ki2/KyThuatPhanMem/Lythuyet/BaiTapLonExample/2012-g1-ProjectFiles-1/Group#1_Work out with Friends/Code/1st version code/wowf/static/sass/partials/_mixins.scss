@@ -1,0 +1,59 @@
+@mixin background($top, $bottom: false, $percentage: 5%) {
+    $bottom: if($bottom, $bottom, darken($top, $percentage));
+    background: mix($top, $bottom);
+    @include background-image(linear-gradient($top, $bottom));
+}
+
+@mixin button($background: $off_white) {
+    color: $black;
+    cursor: pointer;
+    font-weight: bold;
+    @include background($background);
+    @include border-radius($medium_radius);
+    @include opacity(0.8);
+    &:hover {
+        @include opacity(1);
+    }
+}
+
+@mixin clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin link($color: $blue, $underline_hover: true, $hover_color: darken($color, 20%)) {
+    color: $color;
+    cursor: pointer;
+    display: inline-block;
+    @if $underline_hover {
+        @include hover-link;
+    }
+    @else {
+        &:hover {
+            color: $hover_color;
+        }
+    }
+}
+
+@mixin placeholder($color) {
+    &:-moz-placeholder,
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+}
+
+@mixin selection($background) {
+    ::-moz-selection,
+    ::selection {
+        background: $background;
+        color: $white;
+        text-shadow: none;
+    }
+}

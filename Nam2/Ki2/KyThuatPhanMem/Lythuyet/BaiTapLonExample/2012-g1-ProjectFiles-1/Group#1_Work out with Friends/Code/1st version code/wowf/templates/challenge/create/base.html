@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    <h1>Start a new challenge!</h1>
+    <ul class="tabs">
+        <li>
+            <a href="{{ request.route_url('challenge.create.speed') }}" {{ util.mark_selected_route('challenge.create.speed') }}>
+                Speed
+            </a>
+        </li>
+        <li>
+            <a href="{{ request.route_url('challenge.create.endurance') }}" {{ util.mark_selected_route('challenge.create.endurance') }}>
+                Endurance
+            </a>
+        </li>
+        <li>
+            <a href="{{ request.route_url('challenge.create.bench') }}" {{ util.mark_selected_route('challenge.create.bench') }}>
+                Bench Press
+            </a>
+        </li>
+        <li>
+            <a href="{{ request.route_url('challenge.create.squat') }}" {{ util.mark_selected_route('challenge.create.squat') }}>
+                Squat
+            </a>
+        </li>
+    </ul>
+    {% block create_challenge %}{% endblock %}
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{{ request.static_url('wowf:static/jquery-ui/css/ui-lightness/jquery-ui-1.9.1.min.css') }}" />
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{{ request.static_url('wowf:static/jquery-ui/js/jquery-ui-1.9.1.min.js') }}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#competitor').autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "{{ request.route_url('search.users') }}",
+                        data: {
+                            username: request.term
+                        },
+                        success: function (data) {
+                            response($.map(data, function(item) {
+                                return {
+                                    label: '<img src="' + item.avatar + '" /> ' + item.username + ' - ' + item.age + ' year old ' + (item.gender == 'M' ? 'male' : 'female'),
+                                    value: item.username
+                                }
+                            }));
+                        }
+                    });
+                },
+                minLength: 2
+            }).each(function() {
+                $(this).data('autocomplete')._renderItem = function(ul, item) {
+                    return $( "<li></li>" )
+                        .data( "item.autocomplete", item )
+                        .append( $( "<a>" + item.label + "</a>" ) )
+                        .appendTo( ul );
+                };
+            });
+        });
+    </script>
+{% endblock %}

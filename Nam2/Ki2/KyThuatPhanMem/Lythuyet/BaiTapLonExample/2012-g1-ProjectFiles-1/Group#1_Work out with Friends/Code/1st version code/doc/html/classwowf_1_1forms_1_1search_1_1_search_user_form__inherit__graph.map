@@ -1,0 +1,4 @@
+<map id="wowf.forms.search.SearchUserForm" name="wowf.forms.search.SearchUserForm">
+<area shape="rect" id="node2" href="$classwowf_1_1forms_1_1search_1_1_search_form.html" title="{wowf.forms.search.SearchForm\n|+ q\l|}" alt="" coords="5,139,213,224"/>
+<area shape="rect" id="node4" href="$classwowf_1_1forms_1_1_form.html" title="Updated form object, which accepts a state variable to assist in more complex validation." alt="" coords="48,5,171,91"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classwowf_1_1models_1_1challenge_1_1___challenge.html" title="Used for SQLAlchemys joined table inheritance (polymorphism)." alt="" coords="248,39,411,86"/>
+<area shape="rect" id="node3" href="$classwowf_1_1models_1_1challenge_1_1_device_challenge.html" title="Base class for all challenges which require the use of a heart rate device." alt="" coords="471,5,673,51"/>
+<area shape="rect" id="node9" href="$classwowf_1_1models_1_1challenge_1_1_weight_challenge.html" title="Base class for all weight related challenges." alt="" coords="471,74,673,121"/>
+<area shape="rect" id="node5" href="$classwowf_1_1models_1_1challenge_1_1_endurance_challenge.html" title="wowf.models.challenge.Endurance\lChallenge" alt="" coords="731,7,955,54"/>
+<area shape="rect" id="node7" href="$classwowf_1_1models_1_1challenge_1_1_speed_challenge.html" title="wowf.models.challenge.Speed\lChallenge" alt="" coords="744,79,941,126"/>
+<area shape="rect" id="node11" href="$classwowf_1_1models_1_1challenge_1_1_bench_press_challenge.html" title="wowf.models.challenge.Bench\lPressChallenge" alt="" coords="744,155,941,202"/>
+<area shape="rect" id="node13" href="$classwowf_1_1models_1_1challenge_1_1_squat_challenge.html" title="wowf.models.challenge.Squat\lChallenge" alt="" coords="745,238,940,285"/>
+<area shape="rect" id="node14" href="$classwowf_1_1models_1_1notification_1_1___notification.html" title="wowf.models.notification.\l_Notification" alt="" coords="487,474,657,521"/>
+<area shape="rect" id="node16" href="$classwowf_1_1models_1_1notification_1_1_accepted_challenge_notification.html" title="wowf.models.notification.\lAcceptedChallengeNotification" alt="" coords="743,403,943,450"/>
+<area shape="rect" id="node18" href="$classwowf_1_1models_1_1notification_1_1_denied_challenge_notification.html" title="wowf.models.notification.\lDeniedChallengeNotification" alt="" coords="749,473,936,519"/>
+<area shape="rect" id="node20" href="$classwowf_1_1models_1_1notification_1_1_new_buddy_notification.html" title="wowf.models.notification.\lNewBuddyNotification" alt="" coords="757,542,928,589"/>
+<area shape="rect" id="node22" href="$classwowf_1_1models_1_1notification_1_1_requested_challenge_notification.html" title="wowf.models.notification.\lRequestedChallengeNotification" alt="" coords="739,611,947,658"/>
+<area shape="rect" id="node24" href="$classwowf_1_1models_1_1notification_1_1_uploaded_workout_notification.html" title="wowf.models.notification.\lUploadedWorkoutNotification" alt="" coords="747,334,939,381"/>
+<area shape="rect" id="node25" href="$classwowf_1_1models_1_1workout_1_1___workout.html" title="wowf.models.workout.\l_Workout" alt="" coords="253,935,405,982"/>
+<area shape="rect" id="node27" href="$classwowf_1_1models_1_1workout_1_1_device_workout.html" title="Base class for all workouts which require the use of a heart rate device." alt="" coords="475,997,669,1043"/>
+<area shape="rect" id="node33" href="$classwowf_1_1models_1_1workout_1_1_weight_workout.html" title="Base class for all weight related workouts." alt="" coords="475,874,669,921"/>
+<area shape="rect" id="node29" href="$classwowf_1_1models_1_1workout_1_1_endurance_workout.html" title="wowf.models.workout.Endurance\lWorkout" alt="" coords="736,970,949,1017"/>
+<area shape="rect" id="node31" href="$classwowf_1_1models_1_1workout_1_1_speed_workout.html" title="wowf.models.workout.Speed\lWorkout" alt="" coords="748,1039,937,1086"/>
+<area shape="rect" id="node35" href="$classwowf_1_1models_1_1workout_1_1_bench_press_workout.html" title="wowf.models.workout.Bench\lPressWorkout" alt="" coords="748,831,937,878"/>
+<area shape="rect" id="node37" href="$classwowf_1_1models_1_1workout_1_1_squat_workout.html" title="wowf.models.workout.Squat\lWorkout" alt="" coords="749,901,936,947"/>
+<area shape="rect" id="node38" href="$classwowf_1_1lib_1_1fulltext_1_1_fulltext_base.html" title="Adds support for fulltext searching to SQLAlchemy&#39;s Base object." alt="" coords="7,552,196,581"/>
+<area shape="rect" id="node40" href="$classwowf_1_1models_1_1meta_1_1_base.html" title="wowf.models.meta.Base" alt="" coords="247,552,412,581"/>
+<area shape="rect" id="node42" href="$classwowf_1_1models_1_1challenge_1_1_challenge.html" title="Base class for ALL challenges." alt="" coords="463,352,681,381"/>
+<area shape="rect" id="node48" href="$classwowf_1_1models_1_1lookup__tables_1_1_challenge_type.html" title="wowf.models.lookup\l_tables.ChallengeType" alt="" coords="495,143,649,190"/>
+<area shape="rect" id="node50" href="$classwowf_1_1models_1_1lookup__tables_1_1_group.html" title="wowf.models.lookup\l_tables.Group" alt="" coords="501,213,643,259"/>
+<area shape="rect" id="node52" href="$classwowf_1_1models_1_1lookup__tables_1_1_notification_type.html" title="wowf.models.lookup\l_tables.NotificationType" alt="" coords="491,282,653,329"/>
+<area shape="rect" id="node54" href="$classwowf_1_1models_1_1notification_1_1_notification.html" title="wowf.models.notification.\lNotification" alt="" coords="487,405,657,451"/>
+<area shape="rect" id="node61" href="$classwowf_1_1models_1_1pivot__tables_1_1_buddy.html" title="Pivot table between users and the users they follow." alt="" coords="484,543,660,590"/>
+<area shape="rect" id="node63" href="$classwowf_1_1models_1_1pivot__tables_1_1_user_challenge.html" title="Pivot table between users and the challenges they are in." alt="" coords="484,613,660,659"/>
+<area shape="rect" id="node65" href="$classwowf_1_1models_1_1pivot__tables_1_1_user_group.html" title="Pivot table between users and the groups they belong to." alt="" coords="484,682,660,729"/>
+<area shape="rect" id="node67" href="$classwowf_1_1models_1_1pivot__tables_1_1_user_notification.html" title="Pivot table between users and the notifications they should receive." alt="" coords="484,751,660,798"/>
+<area shape="rect" id="node69" href="$classwowf_1_1models_1_1user_1_1_user.html" title="wowf.models.user.User" alt="" coords="492,821,652,851"/>
+<area shape="rect" id="node71" href="$classwowf_1_1models_1_1workout_1_1_workout.html" title="wowf.models.workout.Workout" alt="" coords="471,944,673,973"/>
+<area shape="rect" id="node76" href="$classwowf_1_1models_1_1lookup__tables_1_1_lookup.html" title="wowf.models.lookup\l_tables.Lookup" alt="" coords="259,213,400,259"/>
+</map>

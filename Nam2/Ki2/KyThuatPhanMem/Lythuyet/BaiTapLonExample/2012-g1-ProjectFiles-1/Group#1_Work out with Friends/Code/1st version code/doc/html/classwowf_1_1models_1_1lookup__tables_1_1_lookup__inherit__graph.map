@@ -1,0 +1,5 @@
+<map id="wowf.models.lookup_tables.Lookup" name="wowf.models.lookup_tables.Lookup">
+<area shape="rect" id="node3" href="$classwowf_1_1models_1_1lookup__tables_1_1_challenge_type.html" title="{wowf.models.lookup\l_tables.ChallengeType\n|+ lookup_data\l&#45; __tablename__\l|}" alt="" coords="5,287,160,407"/>
+<area shape="rect" id="node5" href="$classwowf_1_1models_1_1lookup__tables_1_1_group.html" title="{wowf.models.lookup\l_tables.Group\n|+ lookup_data\l+ users\l&#45; __tablename__\l|}" alt="" coords="184,278,325,415"/>
+<area shape="rect" id="node7" href="$classwowf_1_1models_1_1lookup__tables_1_1_notification_type.html" title="{wowf.models.lookup\l_tables.NotificationType\n|+ lookup_data\l&#45; __tablename__\l|}" alt="" coords="349,287,512,407"/>
+</map>

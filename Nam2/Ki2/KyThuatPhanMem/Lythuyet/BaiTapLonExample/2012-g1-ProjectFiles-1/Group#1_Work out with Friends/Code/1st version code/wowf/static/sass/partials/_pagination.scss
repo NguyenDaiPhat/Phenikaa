@@ -1,0 +1,17 @@
+$padding: em(15px);
+
+.pagination {
+    border-top: 1px solid $border_color;
+    padding: $padding 0;
+    a {
+        @include background($off_white);
+        border: 1px solid $border_color;
+        color: $black;
+        display: block;
+        text-align: center;
+        padding: em(8px);
+        text-decoration: none;
+        @include border-radius($medium_radius);
+        @include box-sizing(border-box);
+    }
+}

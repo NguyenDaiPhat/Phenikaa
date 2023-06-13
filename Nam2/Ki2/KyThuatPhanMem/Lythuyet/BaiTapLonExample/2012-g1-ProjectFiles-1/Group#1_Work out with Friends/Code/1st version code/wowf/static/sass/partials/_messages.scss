@@ -1,0 +1,44 @@
+.notice,
+.success,
+.warning,
+.error {
+    $_padding: em(4px);
+    border: 1px solid;
+    margin: $_padding 0;
+    padding: ($_padding * 2) $_padding;
+    padding-left: em(50px);
+    background-repeat: no-repeat;
+    background-position: $_padding center;
+    text-align: justify;
+    width: 100%;
+    @include box-sizing(border-box);
+}
+
+.notice {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: image-url($info_icon);
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: image-url($check_icon);
+}
+
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: image-url($attention_icon);
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: image-url($cancel_icon);
+}
+
+.notification {
+    cursor: pointer;
+    margin: 0 0 em(25px);
+}

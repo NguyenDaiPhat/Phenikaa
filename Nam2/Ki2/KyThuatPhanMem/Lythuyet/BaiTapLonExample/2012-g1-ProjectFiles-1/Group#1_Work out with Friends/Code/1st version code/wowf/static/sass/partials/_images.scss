@@ -1,0 +1,4 @@
+img {
+    max-width: 100%;
+    @include border-radius($img_radius);
+}

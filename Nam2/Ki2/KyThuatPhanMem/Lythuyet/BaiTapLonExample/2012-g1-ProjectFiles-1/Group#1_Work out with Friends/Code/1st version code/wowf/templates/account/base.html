@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    <ul class="tabs">
+        <li>
+            <a href="{{ request.route_url('account.profile') }}" {{ util.mark_selected_route('account.profile') }}>
+                Profile
+            </a>
+        </li>
+        <li>
+            <a href="{{ request.route_url('account.password') }}" {{ util.mark_selected_route('account.password') }}>
+                Password
+            </a>
+        </li>
+    </ul>
+    {% block settings %}{% endblock %}
+{% endblock %}

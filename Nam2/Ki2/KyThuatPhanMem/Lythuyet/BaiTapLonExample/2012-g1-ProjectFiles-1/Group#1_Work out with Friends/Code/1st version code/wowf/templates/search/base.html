@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% set title = 'Search %s'.strip() % form.q.data if form.q.data else 'Search' %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    {{ util.search_form(form) }}
+    <div class="stream-wrapper">
+        {% block stream %}{% endblock %}
+    </div>
+{% endblock %}

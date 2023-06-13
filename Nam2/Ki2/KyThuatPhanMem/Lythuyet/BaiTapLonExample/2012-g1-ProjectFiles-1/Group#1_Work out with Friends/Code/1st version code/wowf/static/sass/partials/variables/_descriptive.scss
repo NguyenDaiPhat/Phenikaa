@@ -1,0 +1,46 @@
+// Colors
+$black:         #000000;
+$off_black:     #303030;
+$dark_gray:     #555555;
+$gray:          #888888;
+$light_gray:    #cccccc;
+$off_white:     #eeeeee;
+$white:         #ffffff;
+$blue:          #049cdb;
+$green:         #46a546;
+$red:           #ff0000;
+$dark_red:      #e01b1b;
+$yellow:        #ffc40d;
+$orange:        #f89406;
+$pink:          #ff99cc;
+$purple:        #666699;
+
+// Fonts
+$sans_serif_fonts:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif_fonts:       Georgia "Times New Roman" serif;
+
+// Icons
+$triangle_icon:     '▼';
+$grid_icon:         '≡';
+$dot_icon:          '·';
+$bg_icon:           'bg.png';
+$pattern1_icon:     'pattern1.gif';
+$add_icon:          'icons/add.png';
+$attention_icon:    'icons/attention.png';
+$cancel_icon:       'icons/cancel.png';
+$check_icon:        'icons/check.png';
+$help_icon:         'icons/help.png';
+$info_icon:         'icons/info.png';
+$message_icon:      'icons/message.png';
+$minus_icon:        'icons/minus.png';
+$search_icon:       'icons/search.png';
+$star_icon:         'icons/star.png';
+
+// Radius
+$small_radius:  em(2px);
+$medium_radius: em(6px);
+$large_radius:  em(12px);
+
+// Media query breakpoints
+$tablet:    'screen and (min-width: 600px)';
+$desktop:   'screen and (min-width: 1000px)';

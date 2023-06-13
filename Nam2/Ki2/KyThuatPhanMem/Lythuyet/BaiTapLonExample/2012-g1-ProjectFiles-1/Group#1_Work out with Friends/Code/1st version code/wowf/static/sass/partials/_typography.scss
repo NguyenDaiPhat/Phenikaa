@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: em(10px);
+    a,
+    span {
+        font-weight: normal;
+        padding: 0;
+    }
+    span {
+        color: $light_gray;
+    }
+}
+
+h1 {
+    font-size: em(18px);
+}
+
+h2 {
+    font-size: em(17px);
+}
+
+h3 {
+    font-size: em(16px);
+}
+
+h4 {
+    font-size: em(15px);
+}
+
+h5 {
+    font-size: em(14px);
+}
+
+h6 {
+    font-size: em(14px);
+}
+
+p {
+    font-size: em(13px);
+    margin-bottom: em(8px);
+}
+
+.suggestion {
+    color: $gray;
+}
+
+.status {
+    @extend .suggestion;
+    margin: 0;
+    padding: em(8px) 0;
+    text-align: center;
+}

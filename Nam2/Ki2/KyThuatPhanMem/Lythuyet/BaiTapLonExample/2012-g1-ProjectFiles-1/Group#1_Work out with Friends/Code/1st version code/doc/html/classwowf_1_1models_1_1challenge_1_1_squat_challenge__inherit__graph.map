@@ -1,0 +1,7 @@
+<map id="wowf.models.challenge.SquatChallenge" name="wowf.models.challenge.SquatChallenge">
+<area shape="rect" id="node2" href="$classwowf_1_1models_1_1challenge_1_1_weight_challenge.html" title="Base class for all weight related challenges." alt="" coords="5,620,208,740"/>
+<area shape="rect" id="node4" href="$classwowf_1_1models_1_1challenge_1_1___challenge.html" title="Used for SQLAlchemys joined table inheritance (polymorphism)." alt="" coords="25,278,188,381"/>
+<area shape="rect" id="node6" href="$classwowf_1_1models_1_1challenge_1_1_challenge.html" title="Base class for ALL challenges." alt="" coords="232,464,451,896"/>
+<area shape="rect" id="node8" href="$classwowf_1_1models_1_1meta_1_1_base.html" title="{wowf.models.meta.Base\n|+ query\l|+ __str__()\l+ __repr__()\l+ __unicode__()\l+ get_by_id()\l+ create()\l+ delete()\l}" alt="" coords="259,243,424,415"/>
+<area shape="rect" id="node10" href="$classwowf_1_1lib_1_1fulltext_1_1_fulltext_base.html" title="Adds support for fulltext searching to SQLAlchemy&#39;s Base object." alt="" coords="247,5,436,195"/>
+</map>

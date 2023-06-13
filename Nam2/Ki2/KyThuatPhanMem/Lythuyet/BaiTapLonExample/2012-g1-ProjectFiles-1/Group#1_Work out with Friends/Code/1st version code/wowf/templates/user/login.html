@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% set title = 'Log In' %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    {{ util.login_form(form) }}
+{% endblock %}

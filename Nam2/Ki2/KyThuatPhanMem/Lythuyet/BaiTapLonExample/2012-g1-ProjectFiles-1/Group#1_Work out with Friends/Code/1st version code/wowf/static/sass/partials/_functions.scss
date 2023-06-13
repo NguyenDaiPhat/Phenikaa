@@ -1,0 +1,7 @@
+@function em($target, $context: 13px) {
+    @return if($target == 0, 0, $target / $context * 1em)
+}
+
+@function percent($target, $context) {
+    @return percentage($target / $context);
+}

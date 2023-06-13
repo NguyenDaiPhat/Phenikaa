@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% import 'utils.html' as util with context %}
+{% block body %}
+    <div class="stream-wrapper">
+        {{ util.mini_user_card(request.user) }}
+        <strong class="header">Recent Challenges</strong>
+        {% if stream %}
+            {{ util.challenge_stream(stream) }}
+        {% else %}
+            <p class="status">There are no challenges at this time.</p>
+        {% endif %}
+    </div>
+{% endblock %}

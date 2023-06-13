@@ -1,0 +1,4 @@
+<map id="wowf.forms.challenge.CreateWeightChallengeForm" name="wowf.forms.challenge.CreateWeightChallengeForm">
+<area shape="rect" id="node2" href="$classwowf_1_1forms_1_1challenge_1_1_create_challenge_form.html" title="{wowf.forms.challenge.Create\lChallengeForm\n|+ competitor\l|}" alt="" coords="5,139,197,242"/>
+<area shape="rect" id="node4" href="$classwowf_1_1forms_1_1_form.html" title="Updated form object, which accepts a state variable to assist in more complex validation." alt="" coords="40,5,163,91"/>
+</map>

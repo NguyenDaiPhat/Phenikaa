@@ -1,0 +1,5 @@
+<map id="wowf.forms.user.UserForm" name="wowf.forms.user.UserForm">
+<area shape="rect" id="node5" href="$classwowf_1_1forms_1_1user_1_1_registration_form.html" title="{wowf.forms.user.RegistrationForm\n|+ password\l|+ register_user()\l}" alt="" coords="5,369,227,455"/>
+<area shape="rect" id="node7" href="$classwowf_1_1forms_1_1user_1_1_update_profile_form.html" title="{wowf.forms.user.UpdateProfileForm\n|+ timezone\l+ avatar\l|+ update_profile()\l}" alt="" coords="251,361,483,463"/>
+<area shape="rect" id="node2" href="$classwowf_1_1forms_1_1_form.html" title="Updated form object, which accepts a state variable to assist in more complex validation." alt="" coords="180,5,303,91"/>
+</map>

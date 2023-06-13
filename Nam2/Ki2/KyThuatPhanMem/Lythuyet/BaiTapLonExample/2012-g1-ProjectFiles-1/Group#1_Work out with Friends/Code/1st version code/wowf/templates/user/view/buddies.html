@@ -1,0 +1,9 @@
+{% extends 'user/view/base.html' %}
+{% import 'utils.html' as util with context %}
+{% block stream %}
+    <strong>{{ stream.item_count|pluralize('buddy', 'buddies') }}</strong>
+    {% if stream %}
+        {{ util.user_stream(stream) }}
+        {{ util.pagination(stream) }}
+    {% endif %}
+{% endblock %}

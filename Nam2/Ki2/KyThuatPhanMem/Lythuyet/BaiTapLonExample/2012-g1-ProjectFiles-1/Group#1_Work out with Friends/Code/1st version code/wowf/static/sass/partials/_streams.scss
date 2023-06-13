@@ -1,0 +1,46 @@
+$padding: em(8px);
+
+.stream {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .item {
+        border-bottom: 1px solid $border_color;
+        display: block;
+        margin: 0;
+        padding: $padding 0;
+        &:last-child {
+            border-bottom: none;
+        }
+        strong {
+            font-size: em(13px);
+        }
+        .title {
+            font-size: em(15px);
+            margin: 0 0 5px;
+            a {
+                color: $off_black;
+                display: block;
+            }
+        }
+        .info p{
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .item {
+            border: none;
+            font-size: em(13px);
+            padding: ($padding / 2) 0;
+        }
+    }
+}
+
+.stream-wrapper .header {
+    background: $off_white;
+    display: block;
+    margin-bottom: em(10px);
+    padding: em(4px);
+    a {
+        font-weight: normal;
+    }
+}

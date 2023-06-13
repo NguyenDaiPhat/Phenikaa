@@ -1,0 +1,26 @@
+{% extends 'account/base.html' %}
+{% set title = 'Update Profile' %}
+{% import 'utils.html' as util with context %}
+{% block settings %}
+    {{ util.update_profile_form(form) }}
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{{ request.static_url('wowf:static/css/libs/mobiscroll-2.0.3.custom.min.css') }}" />
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{{ request.static_url('wowf:static/js/libs/mobiscroll-2.0.3.custom.min.js') }}"></script>
+    <script type="text/javascript">
+        var now = new Date();
+        $('#dob').scroller({
+            preset: 'date',
+            maxDate: new Date(),
+            dateFormat: 'mm/dd/y',
+            dateOrder: 'M ddyy',
+            theme: 'android',
+            display: 'modal',
+            mode: 'scroller'
+        });
+    </script>
+{% endblock %}
