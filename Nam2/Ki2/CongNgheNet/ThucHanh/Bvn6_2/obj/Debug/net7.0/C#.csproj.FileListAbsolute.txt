@@ -1,0 +1,15 @@
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\bin\Debug\net7.0\C#.exe
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\bin\Debug\net7.0\C#.deps.json
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\bin\Debug\net7.0\C#.runtimeconfig.json
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\bin\Debug\net7.0\C#.dll
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\bin\Debug\net7.0\C#.pdb
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\C#.csproj.AssemblyReference.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\C#.GeneratedMSBuildEditorConfig.editorconfig
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\C#.AssemblyInfoInputs.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\C#.AssemblyInfo.cs
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\C#.csproj.CoreCompileInputs.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\C#.dll
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\refint\C#.dll
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\C#.pdb
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\C#.genruntimeconfig.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\C#\obj\Debug\net7.0\ref\C#.dll

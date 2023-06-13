@@ -1,0 +1,16 @@
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\bin\Debug\Helloworld_20_3.exe.config
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\bin\Debug\Helloworld_20_3.exe
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\bin\Debug\Helloworld_20_3.pdb
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3.csproj.AssemblyReference.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3.csproj.SuggestedBindingRedirects.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\MainWindow.g.cs
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\App.g.cs
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3_MarkupCompile.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3_MarkupCompile.lref
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\MainWindow.baml
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3.g.resources
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3.Properties.Resources.resources
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3.csproj.GenerateResource.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3.csproj.CoreCompileInputs.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3.exe
+D:\PHENIKAA\Ki4\CongNghe.Net\Helloworld_20_3\Helloworld_20_3\obj\Debug\Helloworld_20_3.pdb

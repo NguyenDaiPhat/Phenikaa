@@ -1,0 +1,16 @@
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh.csproj.AssemblyReference.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh.csproj.SuggestedBindingRedirects.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\MainWindow.g.cs
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\App.g.cs
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh_MarkupCompile.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh_MarkupCompile.lref
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\bin\Debug\w8_thuchanh.exe.config
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\bin\Debug\w8_thuchanh.exe
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\bin\Debug\w8_thuchanh.pdb
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\MainWindow.baml
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh.g.resources
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh.Properties.Resources.resources
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh.csproj.GenerateResource.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh.csproj.CoreCompileInputs.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh.exe
+D:\PHENIKAA\Ki4\CongNghe.Net\w8_thuchanh\obj\Debug\w8_thuchanh.pdb

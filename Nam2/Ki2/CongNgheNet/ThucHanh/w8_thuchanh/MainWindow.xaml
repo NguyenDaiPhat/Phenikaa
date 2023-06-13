@@ -1,0 +1,16 @@
+﻿<Window x:Class="Helloworld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Helloworld"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid HorizontalAlignment="Right" Width="792">
+        <TextBlock HorizontalAlignment="Left" Margin="136,97,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="41" Width="64" FontSize="14"/>
+        <RadioButton Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="150,152,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="GoodbyeButton" Content="Bye" HorizontalAlignment="Left" Margin="308,152,0,0" VerticalAlignment="Top"/>
+        <Button Content="ButtonClick" HorizontalAlignment="Left" Margin="226,202,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>

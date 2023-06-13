@@ -1,0 +1,15 @@
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\bin\Debug\net7.0\BtapC6_Bai2.exe
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\bin\Debug\net7.0\BtapC6_Bai2.deps.json
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\bin\Debug\net7.0\BtapC6_Bai2.runtimeconfig.json
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\bin\Debug\net7.0\BtapC6_Bai2.dll
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\bin\Debug\net7.0\BtapC6_Bai2.pdb
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\BtapC6_Bai2.csproj.AssemblyReference.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\BtapC6_Bai2.GeneratedMSBuildEditorConfig.editorconfig
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\BtapC6_Bai2.AssemblyInfoInputs.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\BtapC6_Bai2.AssemblyInfo.cs
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\BtapC6_Bai2.csproj.CoreCompileInputs.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\BtapC6_Bai2.dll
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\refint\BtapC6_Bai2.dll
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\BtapC6_Bai2.pdb
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\BtapC6_Bai2.genruntimeconfig.cache
+D:\PHENIKAA\Ki4\CongNghe.Net\BtapC6_Bai2\obj\Debug\net7.0\ref\BtapC6_Bai2.dll
