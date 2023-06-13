@@ -1,0 +1,12 @@
+#ifndef DOG_WEED_H
+#define DOG_WEED_H
+#include "dog.h"
+
+class Dog_Weed : public DOG_H
+{
+    public:
+    float w;
+    Dog_Weed();
+};
+
+#endif // DOG_WEED_H
