@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color:red;
+}
+
+.news{
+    border: 1px solid gray;
+    width: 700px;
+    margin: 0 auto;
+    border-bottom-right-radius: 20px;
+}
+.news-top{
+    padding: 20px;
+    background-color: rgb(231, 226, 226);
+}
+.news-top img{
+    width: 100%;
+}
+.news-bottom {
+    padding: 20px 40px;
+    font-size: 20px;
+
+}
+a{
+    text-decoration: none;
+}
